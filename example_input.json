@@ -1,0 +1,92 @@
+{
+  "data": {
+    "r": 0.02,
+    "pfe_quantile": 0.95,
+    "n_sims": 30000,
+    "seed": 42,
+    "ionq_shots": 200,
+    "positions": [
+      {
+        "symbol": "USDJPY",
+        "asset_type": "fx",
+        "side": "long",
+        "option_type": "put",
+        "strike": 141.0,
+        "spot": 140.0,
+        "vol": 0.15,
+        "maturity_years": 0.25,
+        "notional_usd": 5000000.0,
+        "base_ccy": "USD",
+        "quote_ccy": "JPY"
+      },
+      {
+        "symbol": "USDSGD",
+        "asset_type": "fx",
+        "side": "long",
+        "option_type": "put_usd_call_sgd",
+        "strike": 1.29,
+        "spot": 1.30,
+        "vol": 0.12,
+        "maturity_years": 0.25,
+        "notional_usd": 2000000.0,
+        "base_ccy": "USD",
+        "quote_ccy": "SGD"
+      },
+      {
+        "symbol": "AAPL",
+        "asset_type": "equity",
+        "side": "long",
+        "option_type": "call",
+        "strike": 210.0,
+        "spot": 250.0,
+        "vol": 0.22,
+        "maturity_years": 0.25,
+        "notional_shares": 10000
+      },
+      {
+        "symbol": "TSLA",
+        "asset_type": "equity",
+        "side": "short",
+        "option_type": "put",
+        "strike": 430.0,
+        "spot": 440.0,
+        "vol": 0.51,
+        "maturity_years": 0.25,
+        "notional_shares": 5000
+      },
+      {
+        "symbol": "MSFT",
+        "asset_type": "equity",
+        "side": "long",
+        "option_type": "put",
+        "strike": 530.0,
+        "spot": 520.0,
+        "vol": 0.14,
+        "maturity_years": 0.25,
+        "notional_shares": 2000
+      },
+      {
+        "symbol": "AMZN",
+        "asset_type": "equity",
+        "side": "long",
+        "option_type": "call",
+        "strike": 230.0,
+        "spot": 225.0,
+        "vol": 0.25,
+        "maturity_years": 0.25,
+        "notional_shares": 8000
+      },
+      {
+        "symbol": "NVDA",
+        "asset_type": "equity",
+        "side": "short",
+        "option_type": "call",
+        "strike": 190.0,
+        "spot": 180.0,
+        "vol": 0.32,
+        "maturity_years": 0.25,
+        "notional_shares": 1000
+      }
+    ]
+  }
+}
