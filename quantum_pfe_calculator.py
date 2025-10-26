@@ -310,7 +310,7 @@ class QuantumPFECalculator:
         ax4.grid(True, alpha=0.3)
         
         plt.tight_layout()
-        plt.savefig('/home/claude/pfe_comparison.png', dpi=150)
+        plt.savefig('pfe_comparison.png', dpi=150)
         plt.show()
         
         return fig
@@ -322,7 +322,7 @@ def main():
     print("=" * 60)
     
     # Initialize calculator
-    calculator = QuantumPFECalculator('/home/claude/example_input.json')
+    calculator = QuantumPFECalculator('example_input.json')
     
     print(f"\nPortfolio Summary:")
     print(f"- Number of positions: {len(calculator.positions)}")
@@ -465,7 +465,7 @@ if __name__ == "__main__":
         }
     }
     
-    with open('/home/claude/example_input.json', 'w') as f:
+    with open('example_input.json', 'w') as f:
         json.dump(example_data, f, indent=2)
     
     main()
