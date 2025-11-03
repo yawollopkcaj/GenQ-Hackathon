@@ -1,4 +1,4 @@
-# Quantum Monte Carlo for Portfolio PFE Calculation
+# 2nd Place 🥈 Winners GenQ Hackathon Series - Quantum in Finance
 
 ## Challenge: Counterparty Credit Risk - Quantum Hackathon
 
