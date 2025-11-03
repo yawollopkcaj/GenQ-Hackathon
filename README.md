@@ -199,7 +199,6 @@ The implementation includes comprehensive visualizations showing:
 
 ---
 
-**Team**: Quantum Risk Innovators  
-**Hackathon**: Quantum Computing for Finance  
-**Date**: 2024  
-**Contact**: quantum-pfe@example.com
+**Team**: JEAF
+**Hackathon**: GenQ Hackathon Series - Quantum for Finance
+**Date**: 2025  
