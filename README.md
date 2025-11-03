@@ -12,7 +12,7 @@ Traditional Monte Carlo simulations for PFE calculation require millions of samp
 ### Key Innovation
 - **Quantum Amplitude Estimation**: Achieves O(1/n) error scaling vs O(1/√n) for classical Monte Carlo
 - **Correlated Asset Modeling**: Quantum states encode correlation structure between assets
-- **Portfolio Aggregation**: Quantum arithmetic for efficient payoff calculation
+- **Portfolio Aggregation**: Quantum arithmetic (Hamiltonian Dynamics) for efficient calculation
 
 ## 📊 Technical Architecture
 
