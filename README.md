@@ -138,16 +138,19 @@ calculating Potential Future Exposure (PFE) for financial derivatives is traditi
 - **Solution**: Efficient quantum correlation circuits
 - **Implementation**: Controlled rotation gates
 
-## Resources
+## References
 
-* [Quantum Amplitude Estimation](https://arxiv.org/pdf/1905.02666)
-* [Risk Analysis using Quantum Computers](https://www.nature.com/articles/s41534-019-0130-6)
-* [Quantum Risk Models](https://arxiv.org/pdf/2103.05475)
-* [Q# Documentation](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview)
+1. N. Stamatopoulos, D. J. Egger, Y. Sun, C. Zoufal, R. Iten, N. Shen, and S. Woerner, "Option Pricing using Quantum Computers," Quantum, vol. 4, p. 291, Jul. 2020. [Online]. Available: https://arxiv.org/pdf/1905.02666
+
+2. S. Woerner and D. J. Egger, "Quantum risk analysis," npj Quantum Information, vol. 5, no. 15, Feb. 2019. [Online]. Available: https://www.nature.com/articles/s41534-019-0130-6
+
+3. M. C. Braun, T. Decker, N. Hegemann, S. F. Kerstan, and C. Schäfer, "A Quantum Algorithm for the Sensitivity Analysis of Business Risks," arXiv preprint arXiv:2103.05475, Mar. 2021. [Online]. Available: https://arxiv.org/pdf/2103.05475
+
+4. Microsoft, "Introduction to the Q# Programming Language," Microsoft Azure Quantum Documentation. [Online]. Available: https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview
 
 ---
 
-**Team**: JEAF
+**Team Name**: JEAF (**J**ack, **E**d, **A**lissa, **F**araz)
 
 **Hackathon**: GenQ Hackathon Series, Quantum for Finance
 
