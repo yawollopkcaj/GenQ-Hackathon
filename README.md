@@ -16,7 +16,8 @@ calculating Potential Future Exposure (PFE) for financial derivatives is traditi
 ### Architectural Overview
 This system utilizes **Quantum Amplitude Estimation (QAE)** to evaluate financial risk metrics (such as Value at Risk or Conditional Value at Risk) and price European options. The architecture provides a theoretical quadratic speedup over classical Monte Carlo methods by leveraging quantum interference to converge on the target value with fewer query samples.
 
-<caption><b>Quantum Amplitude Estimation</b></caption>
+<p align="center">
+<caption><b>*Quantum Amplitude Estimation*</b></caption>
 </p>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f8b23ed4-dcdf-4a85-8410-bd5475132564" width="600" />
