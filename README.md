@@ -111,20 +111,6 @@ The core computational engine replaces classical sampling with Grover-based inte
 - **Job Creation**: New roles in quantum finance
 - **Economic Resilience**: Improved stress testing capabilities
 
-## Technical Challenges & Solutions
-
-### Challenge 1: Quantum Noise
-- **Solution**: Error mitigation techniques
-- **Implementation**: Zero-noise extrapolation
-
-### Challenge 2: Limited Qubits
-- **Solution**: Circuit optimization and compression
-- **Implementation**: Variational encoding
-
-### Challenge 3: Correlation Modeling
-- **Solution**: Efficient quantum correlation circuits
-- **Implementation**: Controlled rotation gates
-
 ## References
 
 1. N. Stamatopoulos, D. J. Egger, Y. Sun, C. Zoufal, R. Iten, N. Shen, and S. Woerner, "Option Pricing using Quantum Computers," Quantum, vol. 4, p. 291, Jul. 2020. [Online]. Available: https://arxiv.org/pdf/1905.02666
