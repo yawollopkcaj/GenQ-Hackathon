@@ -11,6 +11,12 @@ This project implements a quantum-enhanced Monte Carlo method for calculating Po
 ### Problem Statement
 calculating Potential Future Exposure (PFE) for financial derivatives is traditionally very computationally expensive. Classical Monte Carlo simulations require millions of samples to get accurate estimates, which is slow and costly for banks.
 
+<caption><i>Potential Future Exposure (PFE)</i></caption>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/df7346b5-7df2-4a11-8ca6-1c94e0a6e888" width="600" />
+</p>
+
 ## Technical Architecture
 
 ### Architectural Overview
