@@ -12,23 +12,29 @@ This project implements a quantum-enhanced Monte Carlo method for calculating Po
 calculating Potential Future Exposure (PFE) for financial derivatives is traditionally very computationally expensive. Classical Monte Carlo simulations require millions of samples to get accurate estimates, which is slow and costly for banks.
 
 ### Key Innovation
+
+
+## Technical Architecture
+
+### Highlights
+
 - **Quantum Amplitude Estimation**: Achieves O(1/n) error scaling vs O(1/√n) for classical Monte Carlo
 - **Correlated Asset Modeling**: Quantum states encode correlation structure between assets
 - **Portfolio Aggregation**: Quantum arithmetic (Hamiltonian Dynamics) for efficient calculation
 
-## Technical Architecture
+### Architecture
 
-### 1. Quantum State Preparation
+**Quantum State Preparation**
 - Encodes log-normal distributions for asset prices in quantum amplitudes
 - Implements correlation transformation for realistic market dynamics
 - Uses 4-6 qubits per asset for price discretization
 
-### 2. Payoff Computation
+**Payoff Computation**
 - Quantum circuits for European option payoffs (calls and puts)
 - Handles both long and short positions
 - Quantum arithmetic for portfolio aggregation
 
-### 3. Amplitude Amplification
+**Amplitude Amplification**
 - Grover-based oracle for threshold detection
 - Iterative amplitude amplification for PFE quantile estimation
 - Theoretical quadratic speedup: O(√N) vs O(N) queries
@@ -152,6 +158,6 @@ calculating Potential Future Exposure (PFE) for financial derivatives is traditi
 
 **Team Name**: JEAF (**J**ack, **E**d, **A**lissa, **F**araz)
 
-**Hackathon**: GenQ Hackathon Series, Quantum for Finance
+**Hackathon**: GenQ Hackathon Series, Quantum AI for Finance (Singapore)
 
 **Date**: 2025  
