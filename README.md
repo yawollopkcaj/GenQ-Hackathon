@@ -72,7 +72,7 @@ The core computational engine replaces classical sampling with Grover-based inte
   <img src="https://github.com/user-attachments/assets/13e49577-d024-4c74-b69e-ee4a5d620e74" width="600" />
 </p>
 
-## Quantum Implementation Requirements
+## Logistics and Constraints
 
 ### Current Implementation (NISQ-ready)
 - **Qubits Required**: 30-40 for basic portfolio
