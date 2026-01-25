@@ -83,16 +83,6 @@ calculating Potential Future Exposure (PFE) for financial derivatives is traditi
    - Grover iterations: O(√(1/p)) where p is success probability
    - Optimal iteration count: π/4 × √(N/M)
 
-### Error Analysis
-
-Classical MC Error: ε_c = σ/√n
-Quantum QAE Error: ε_q = π²/(8k²)
-
-where:
-* n = number of MC samples
-* k = number of QAE iterations
-* σ = standard deviation
-
 ## Path to Quantum Advantage
 
 ### Current Implementation (NISQ-ready)
@@ -104,12 +94,6 @@ where:
 - **Break-even point**: ~10⁴ classical samples
 - **Significant advantage**: >10⁶ classical samples
 - **Hardware requirements**: 50-100 logical qubits
-
-### Future Enhancements
-1. **Path-dependent options** (Asian, Barrier)
-2. **Multi-period risk assessment**
-3. **Credit exposure profiles over time
-4. **Real-time risk recalculation
 
 ## Business Case
 
@@ -154,10 +138,10 @@ where:
 
 ## Resources
 
-1. [Quantum Amplitude Estimation](https://arxiv.org/pdf/1905.02666)
-2. [Risk Analysis using Quantum Computers](https://www.nature.com/articles/s41534-019-0130-6)
-3. [Quantum Risk Models](https://arxiv.org/pdf/2103.05475)
-4. [Q# Documentation](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview)
+* [Quantum Amplitude Estimation](https://arxiv.org/pdf/1905.02666)
+* [Risk Analysis using Quantum Computers](https://www.nature.com/articles/s41534-019-0130-6)
+* [Quantum Risk Models](https://arxiv.org/pdf/2103.05475)
+* [Q# Documentation](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview)
 
 ---
 
