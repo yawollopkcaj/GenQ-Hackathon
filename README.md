@@ -11,34 +11,33 @@ This project implements a quantum-enhanced Monte Carlo method for calculating Po
 ### Problem Statement
 calculating Potential Future Exposure (PFE) for financial derivatives is traditionally very computationally expensive. Classical Monte Carlo simulations require millions of samples to get accurate estimates, which is slow and costly for banks.
 
-### Key Innovation
-
-
 ## Technical Architecture
 
-### Highlights
+### Architectural Overview
+This system utilizes **Quantum Amplitude Estimation (QAE)** to evaluate financial risk metrics (such as Value at Risk or Conditional Value at Risk) and price European options. The architecture provides a theoretical quadratic speedup over classical Monte Carlo methods by leveraging quantum interference to converge on the target value with fewer query samples.
 
-- **Quantum Amplitude Estimation**: Achieves O(1/n) error scaling vs O(1/√n) for classical Monte Carlo
-- **Correlated Asset Modeling**: Quantum states encode correlation structure between assets
-- **Portfolio Aggregation**: Quantum arithmetic (Hamiltonian Dynamics) for efficient calculation
+### 1. Quantum State Preparation (Data Encoding)
+The initialization phase loads classical financial probability distributions into a quantum superposition state.
 
-### Architecture
+* **Distribution Encoding:** Maps log-normal distributions of asset prices into the amplitudes of quantum states.
+* **Correlation Structure:** Implements multivariate dependence between assets using a series of controlled rotation gates ($R_y, R_z$).
+* **Discretization:** Utilizes **4–6 qubits per asset** to represent price intervals, balancing precision with circuit depth.
+* **Circuit Depth:** Scales as $O(n \log n)$ for $n$ qubits, optimizing for coherence time constraints.
 
-**Quantum State Preparation**
-- Encodes log-normal distributions for asset prices in quantum amplitudes
-- Implements correlation transformation for realistic market dynamics
-- Uses 4-6 qubits per asset for price discretization
+### 2. Payoff Operator & Portfolio Aggregation
+Once the state is prepared, the system computes the financial logic using reversible quantum arithmetic.
 
-**Payoff Computation**
-- Quantum circuits for European option payoffs (calls and puts)
-- Handles both long and short positions
-- Quantum arithmetic for portfolio aggregation
+* **Payoff Logic:** Dedicated quantum comparators calculate the payoff for European options (calls and puts), handling both long and short positions efficiently.
+* **Portfolio Aggregation:** Uses quantum adders to sum individual asset payoffs into a total portfolio value. This preserves the quantum coherence required for subsequent amplification.
+* **Resource Overhead:** Requires approximately $4n + 6$ qubits (encoding + payoff) plus additional ancilla qubits for arithmetic carry operations.
 
-**Amplitude Amplification**
-- Grover-based oracle for threshold detection
-- Iterative amplitude amplification for PFE quantile estimation
-- Theoretical quadratic speedup: O(√N) vs O(N) queries
+### 3. Amplitude Estimation Engine (The Solver)
+The core computational engine replaces classical sampling with Grover-based interference patterns to estimate the expectation value.
 
+* **Oracle Construction:** A Boolean oracle identifies states where the portfolio loss exceeds a specific threshold (for VaR calculations).
+* **Grover Operator:** Iteratively amplifies the amplitude of the "risk" states. The optimal number of iterations is $\frac{\pi}{4}\sqrt{N/M}$, where $N$ is the total search space and $M$ is the number of target states.
+* **Convergence Rate:** Achieves a convergence error scaling of $O(1/n)$ (Heisenberg limit) compared to the classical Monte Carlo scaling of $O(1/\sqrt{n})$.
+  
 ## Results & Performance
 
 ### Portfolio Composition
@@ -73,25 +72,7 @@ calculating Potential Future Exposure (PFE) for financial derivatives is traditi
   <img src="https://github.com/user-attachments/assets/13e49577-d024-4c74-b69e-ee4a5d620e74" width="600" />
 </p>
 
-## Technical Deep Dive
-
-### Quantum Circuit Components
-
-1. **State Preparation Circuit**
-   - Depth: O(n log n) for n qubits
-   - Gates: Controlled rotations for correlations
-   - Total qubits: 4n + 6 + n (price + payoff + ancilla)
-
-2. **Payoff Oracle**
-   - Implements comparison and arithmetic operations
-   - Reversible computation for quantum coherence
-   - Handles option type, strike, and position side
-
-3. **Amplitude Amplification**
-   - Grover iterations: O(√(1/p)) where p is success probability
-   - Optimal iteration count: π/4 × √(N/M)
-
-## Path to Quantum Advantage
+## Quantum Implementation Requirements
 
 ### Current Implementation (NISQ-ready)
 - **Qubits Required**: 30-40 for basic portfolio
