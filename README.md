@@ -2,6 +2,8 @@
 
 ## Challenge: Counterparty Credit Risk, Quantum Hackathon
 
+### Summary 
+
 This project implements a quantum-enhanced Monte Carlo method for calculating Potential Future Exposure (PFE) of a financial derivatives portfolio using Quantum Amplitude Estimation (QAE).
 
 ## Project Overview
