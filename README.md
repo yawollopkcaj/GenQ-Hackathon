@@ -7,7 +7,7 @@ This project implements a quantum-enhanced Monte Carlo method for calculating Po
 ## Project Overview
 
 ### Problem Statement
-Traditional Monte Carlo simulations for PFE calculation require millions of samples to achieve accurate risk estimates, making them computationally intensive. This quantum approach leverages amplitude amplification to achieve quadratic speedup in convergence.
+calculating Potential Future Exposure (PFE) for financial derivatives is traditionally very computationally expensive. Classical Monte Carlo simulations require millions of samples to get accurate estimates, which is slow and costly for banks.
 
 ### Key Innovation
 - **Quantum Amplitude Estimation**: Achieves O(1/n) error scaling vs O(1/√n) for classical Monte Carlo
@@ -30,26 +30,6 @@ Traditional Monte Carlo simulations for PFE calculation require millions of samp
 - Grover-based oracle for threshold detection
 - Iterative amplitude amplification for PFE quantile estimation
 - Theoretical quadratic speedup: O(√N) vs O(N) queries
-
-## Getting Started
-
-### Prerequisites
-```bash
-# Install required packages
-pip install qsharp numpy scipy matplotlib
-```
-
-### Running the Code
-
-1. **Classical Baseline**:
-```python
-python quantum_pfe_calculator.py
-```
-
-2. **Q# Quantum Simulation**:
-```bash
-dotnet run --project QuantumPFE.csproj
-```
 
 ## Results & Performance
 
@@ -105,15 +85,13 @@ dotnet run --project QuantumPFE.csproj
 
 ### Error Analysis
 
-```
 Classical MC Error: ε_c = σ/√n
 Quantum QAE Error: ε_q = π²/(8k²)
 
 where:
-- n = number of MC samples
-- k = number of QAE iterations
-- σ = standard deviation
-```
+* n = number of MC samples
+* k = number of QAE iterations
+* σ = standard deviation
 
 ## Path to Quantum Advantage
 
@@ -160,12 +138,7 @@ where:
 - **Job Creation**: New roles in quantum finance
 - **Economic Resilience**: Improved stress testing capabilities
 
-### Additional SDG Impacts
-- **SDG 9**: Innovation in financial infrastructure
-- **SDG 10**: Reduced inequality through stable markets
-- **SDG 17**: Global financial system partnerships
-
-## 🔧 Technical Challenges & Solutions
+## Technical Challenges & Solutions
 
 ### Challenge 1: Quantum Noise
 - **Solution**: Error mitigation techniques
@@ -179,32 +152,17 @@ where:
 - **Solution**: Efficient quantum correlation circuits
 - **Implementation**: Controlled rotation gates
 
-## References
+## Resources
 
 1. [Quantum Amplitude Estimation](https://arxiv.org/pdf/1905.02666)
 2. [Risk Analysis using Quantum Computers](https://www.nature.com/articles/s41534-019-0130-6)
 3. [Quantum Risk Models](https://arxiv.org/pdf/2103.05475)
 4. [Q# Documentation](https://learn.microsoft.com/en-us/azure/quantum/qsharp-overview)
 
-## Key Achievements
-
-✅ Functional quantum Monte Carlo implementation  
-✅ 176x theoretical speedup demonstrated  
-✅ Handles real portfolio with 7 positions  
-✅ Correlated asset modeling implemented  
-✅ Clear path to quantum advantage identified  
-✅ Business case and SDG impact analyzed  
-
-## Next Steps
-
-1. **Hardware Testing**: Deploy on IONQ/IBM quantum computers
-2. **Circuit Optimization**: Reduce gate depth by 50%
-3. **Extended Features**: Add American options, credit derivatives
-4. **Integration**: Build API for existing risk systems
-5. **Validation**: Backtest with historical market data
-
 ---
 
 **Team**: JEAF
+
 **Hackathon**: GenQ Hackathon Series, Quantum for Finance
+
 **Date**: 2025  
